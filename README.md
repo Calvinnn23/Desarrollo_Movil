@@ -1,3 +1,3 @@
-Repositorio de materia **Programación de Dispositivos Móviles** 
+𝙍𝙚𝙥𝙤𝙨𝙞𝙩𝙤𝙧𝙞𝙤 𝙙𝙚 𝙢𝙖𝙩𝙚𝙧𝙞𝙖 𝙋𝙧𝙤𝙜𝙧𝙖𝙢𝙖𝙘𝙞ó𝙣 𝙙𝙚 𝘿𝙞𝙨𝙥𝙤𝙨𝙞𝙩𝙞𝙫𝙤𝙨 𝙈ó𝙫𝙞𝙡𝙚𝙨
 
-**Estudiante:** Miguel Angel Cadena Rojas
+𝙀𝙨𝙩𝙪𝙙𝙞𝙖𝙣𝙩𝙚: 𝙈𝙞𝙜𝙪𝙚𝙡 𝘼𝙣𝙜𝙚𝙡 𝘾𝙖𝙙𝙚𝙣𝙖 𝙍𝙤𝙟𝙖𝙨
