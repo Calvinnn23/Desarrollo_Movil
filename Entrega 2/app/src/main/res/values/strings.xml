@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Proyect_1</string>
+    <string name="label_cont">Contador:</string>
+    <string name="label_cont_num">0</string>
+    <string name="btn_sum">+</string>
+    <string name="btn_res">-</string>
+    <string name="label_name">Nombre Completo</string>
+    <string name="label_user_input">Digitar…</string>
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="btnSi">Sí</string>
+    <string name="btnNo">No</string>
+    <string name="btnEnviar">Enviar Respuesta</string>
+</resources>
