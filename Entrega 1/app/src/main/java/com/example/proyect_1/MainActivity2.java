@@ -2,6 +2,7 @@ package com.example.proyect_1;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.CalendarContract;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -40,22 +41,34 @@ public class MainActivity2 extends AppCompatActivity {
 
         labelUser = findViewById(R.id.label_userName);
         btnResp = findViewById(R.id.btnEnviar);
+
+        String name = getIntent().getStringExtra("name");
+        labelUser.setText(String.format("Hola, %s bien o qué, vamos a tomar polita mi fafa?", name));
+
+        btnResp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                calendarEvent("Calendario", "Placita", 2000l, 6000l);
+            }
+        });
+    }
+
+    private void calendarEvent(String title, String location, long begin, long end) {
+        Intent intent = new Intent(Intent.ACTION_INSERT)
+                .setData(CalendarContract.Events.CONTENT_URI)
+                .putExtra(CalendarContract.Events.TITLE, title)
+                .putExtra(CalendarContract.Events.EVENT_LOCATION, location)
+                .putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, begin)
+                .putExtra(CalendarContract.EXTRA_EVENT_END_TIME, end);
+        if (intent.resolveActivity(getPackageManager()) == null) {
+            startActivity(intent);
+        }
     }
 
     protected void onResume() {
         super.onResume();
         Log.d(TAG, "Estoy en el onResume");
 
-        String name = getIntent().getStringExtra("name");
-        labelUser.setText(String.format("Hola, %s bien o qué, vamos tomar polita mi fafa?", name));
-
-        btnResp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity2.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 
     @Override
