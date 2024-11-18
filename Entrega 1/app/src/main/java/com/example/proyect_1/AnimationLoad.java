@@ -10,7 +10,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class ActivityAnimation extends AppCompatActivity {
+public class AnimationLoad extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ public class ActivityAnimation extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent animationIntent = new Intent(ActivityAnimation.this, MainActivity.class);
+                Intent animationIntent = new Intent(AnimationLoad.this, MainActivity2.class);
                 startActivity(animationIntent);
                 finish();
             }
