@@ -10,10 +10,10 @@
     tools:context=".AnimationLoad">
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/idAnimationLoad"
+        android:id="@+id/idAnimationV2"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        app:lottie_rawRes="@raw/animation_load"
+        app:lottie_rawRes="@raw/load_animation"
         app:lottie_loop="true"
         app:lottie_autoPlay="true">
     </com.airbnb.lottie.LottieAnimationView>

@@ -48,7 +48,8 @@ public class MainActivity2 extends AppCompatActivity {
         btnResp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                calendarEvent("Calendario", "Placita", 2000l, 6000l);
+                Intent intent = new Intent(MainActivity2.this, AnimationLoad.class);
+                startActivity(intent);
             }
         });
     }

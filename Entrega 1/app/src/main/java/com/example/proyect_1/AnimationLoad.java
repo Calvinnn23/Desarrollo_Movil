@@ -16,7 +16,7 @@ public class AnimationLoad extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_animation);
+        setContentView(R.layout.animation_load);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -25,7 +25,7 @@ public class AnimationLoad extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent animationIntent = new Intent(AnimationLoad.this, MainActivity2.class);
+                Intent animationIntent = new Intent(AnimationLoad.this, MainActivity.class);
                 startActivity(animationIntent);
                 finish();
             }
